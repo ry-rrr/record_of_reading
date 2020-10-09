@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>新規登録</title>
+    </head>
+    <body>
+        新規登録<br>
+        <form method="post" action="add.php">
+            タイトル：<input type="text" name="book_title" required>
+            <br>
+            作者：<input type="text" name="author">
+            <br>
+            点数：<input type="number" min="0" max="100" name="score">点
+            <br>
+            読んだ日
+            <input type="text" name="reading_date" placeholder="例 2020-01-01">
+            <br>
+            感想：
+            <textarea name="impressions" cols="50" rows="5" maxlength="200"></textarea>
+            <br>
+            <input type="submit" value="登録">
+        </form>
+        <a href="index.php">トップページへ戻る</a>
+    </body>
+</html>
